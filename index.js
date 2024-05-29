@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
 app.use(function(req, res, next) {
-    res.header("Access-Control-Allow-Origin", 'https://memories-project-seven.vercel.app/');
+    res.header("Access-Control-Allow-Origin", 'https://memories-project-seven.vercel.app');
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
     next();
   });
